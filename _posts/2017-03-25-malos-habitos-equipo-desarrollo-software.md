@@ -7,7 +7,7 @@ categories: software
 
 Pues después de un montón de tiempo sin escribir (y sin saber sobre que tema hacerlo) el otro día publiqué el que hasta el momento ha sido mi tweet más popular.
 
-{% twitter https://twitter.com/delr3ves/status/821425216735903746 %}
+
 
 Al final [@snunsan](https://twitter.com/snunsan) propuso la idea de publicar una lista sobre “cuáles son esos hábitos” tan terribles de los que hablaba. Si he de ser sincero, en el momento no estaba pensando en nada en concreto, simplemente acababa de hablar de algo con [@serchinastico](https://twitter.com/serchinastico) y me vino la inspiración. Tampoco estoy seguro de si voy a estropear el mensaje intentando aclararlo pero bueno, ya que fui yo el que abrió el melón, ahí van algunos de esos malos hábitos que me vienen a la mente:
 
