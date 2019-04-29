@@ -18,7 +18,7 @@ Antes de nada, para quienes no estéis familiarizados con estos principios:
 
 ## KISS (Keep it simple, stupid)
 
-El principio de diseño [KISS](https://en.wikipedia.org/wiki/KISS_principle) nos viene a decir que un sistema funciona mejor si se mantiene simple. Y ya que hablamos de simplicidad, no podemos dejar de hablar de complejidad, para lo cual os recomiendo echarle un ojo a [out of the tar pit](http://curtclifton.net/papers/MoseleyMarks06a.pdf) de Ben Moseley y Peter Marks. En él se habla bastante extensamente de la complejidad y toman de Brooks la distinción clara entre:
+El principio de diseño [KISS](https://en.wikipedia.org/wiki/KISS_principle) nos viene a decir que un sistema funciona mejor si se mantiene simple. Y ya que hablamos de simplicidad, no podemos dejar de hablar de complejidad, para lo cual os recomiendo echarle un ojo a [Out of the tar pit](http://curtclifton.net/papers/MoseleyMarks06a.pdf) de Ben Moseley y Peter Marks. En él se habla bastante extensamente de la complejidad y toman de Brooks la distinción clara entre:
 
 * **Complejidad esencial**: aquella que es intrínseca al problema a resolver.
 
@@ -30,7 +30,7 @@ El principio de diseño [KISS](https://en.wikipedia.org/wiki/KISS_principle) nos
 El principio [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) nos dice que no deberíamos añadir más funcionalidad de la estrictamente necesaria.
 
 
-Bien, estos dos principios parecen de lo más razonable, ¿no? **no compliques tu programa** y **no hagas más de lo necesario**. Lo que no es tan fácil de ver es cuándo algo es más complicado de lo que debería o cual es la funcionalidad justa y necesaria.
+Bien, estos dos principios parecen de lo más razonables, ¿no? **no compliques tu programa** y **no hagas más de lo necesario**. Lo que no es tan fácil de ver es cuándo algo es más complicado de lo que debería o cual es la funcionalidad justa y necesaria.
 
 ## Con respecto a la complejidad:
 
@@ -67,3 +67,5 @@ A mi esto me parece un problema grande y os comento mi razonamiento cuando me pl
 Cuando algo no lo necesito inmediatamente pienso: **¿cuánto me cuesta hacerlo ahora?** y **¿cuánto me costaría hacerlo en el futuro?**. Si el esfuerzo es parecido... ya lo haré cuando lo necesite. Sino ya empiezo a plantearme. **¿es posible que lo necesite en el futuro?** y **¿es probable?**. Si además de ser más caro hacerlo más adelante, es posible y es probable que lo tenga que hacer, creo que habría que plantearse seriamente hacerlo ahora.
 
 Si os fijáis todos los ejemplos que he puesto anteriormente son relativamente sencillos de llevar a cabo al principio, pero pueden volverse inviables según se va retrasando la tarea.
+
+Tras estas reflexiones me gustaría dejar claro que ambos principios de diseño rigen mi día a día y que me parecen fundamentales. Pero, como siempre, es bueno saber en qué contexto aplican y en cual debemos obviarlos. Una vez que tenemos los recursos suficientes para decidir si finalmente es importante hacer cierta tarea o no, yo soy muy partidario de intentar reducir las necesidades del negocio y la funcionalidad de nuestro sistema todo lo que se pueda. Si logramos un compromiso entre el equipo de desarrollo y el de producto, todos viviremos mucho mejor ;)
