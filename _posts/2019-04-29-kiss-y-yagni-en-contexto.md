@@ -1,9 +1,14 @@
 ---
 layout: commented_post
-title:  "KISS y YAGNI en contexto"
+title:  KISS y YAGNI en contexto
 date:   2019-04-29 12:00:00 +0200
 categories: blog
 excerpt:
+  <p>Tras hablar de <a href="/blog/2019/04/28/la-importancia-del-contexto.html">la importancia del contexto</a> es el momento de ver cómo de útil es esto de la epistemología para decidir cuándo aplica y cuándo no.
+  </p>
+  <p>
+  Así que quiero aprovechar este post para darle contexto a los principios KISS y YAGNI y así no acabar <a href="/blog/2015/01/30/de-leer-libros-mal-y-de-joderlos.html">leyéndolos mal y jodiéndolos</a>.
+  </p>
 ---
 
 Tras hablar de [la importancia del contexto](/blog/2019/04/28/la-importancia-del-contexto.html) es el momento de ver cómo de útil es esto de la epistemología para decidir cuándo aplica y cuándo no.
