@@ -18,22 +18,19 @@ title: Sergio Arroyo Cuevas
 email: sergio@serch.dev
 description: <Freelance Software Developer>.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.serch.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: delr3ves
-github_username:  der3ves
-
+github_username:  delr3ves
+social_links:
+  linkedin: sergioac
+disqus:
+  shortname: serch-dev
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
 
-disqus:
-  shortname: serch-dev
-
 show_excerpts: true
 excerpt_separator: -- seguir leyendo --
 google_analytics: UA-139204114-1
-
-social_links:
-  linkedin: sergioac
