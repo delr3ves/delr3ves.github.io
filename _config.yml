@@ -17,6 +17,8 @@ logo: /assets/images/serch-dev-logo.png
 title: Sergio Arroyo Cuevas
 email: sergio@serch.dev
 description: <Freelance Software Developer>.
+lang: es
+image: /assets/images/serch-dev-logo.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.serch.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: delr3ves
@@ -30,7 +32,19 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 show_excerpts: true
 excerpt_separator: -- seguir leyendo --
 google_analytics: UA-139204114-1
+twitter:
+  username: delr3ves
+  card: summary
+
+social:
+  name: Sergio Arroyo Cuevas
+  links:
+    - https://twitter.com/delr3ves
+    - https://www.linkedin.com/in/sergioac/
+    - htts://gihub.com/delr3ves
+    - https://www.slideshare.net/delr3ves

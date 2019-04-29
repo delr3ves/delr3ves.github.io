@@ -52,7 +52,7 @@ Nada nuevo bajo el sol hasta este momento, ¿no?
 
 ## Epistemología
 
-Ahora es cuando entra en juego una de las grandes olvidadas... la epistemología. Que simplificando mucho podríamos definir como *nuestra forma de ver la vida*.
+Ahora es cuando entra en juego una de las grandes desconocidas... la epistemología. Simplificando mucho podríamos definir como *nuestra forma de ver la vida*.
 Está muy relacionada con nuestra escala de valores y nuestras prioridades. En función a qué le damos importancia sacaremos unas conclusiones u otras.
 La epistemología es la responsable de cómo nosotros generamos e interpretamos contextos.
 
@@ -73,12 +73,16 @@ _Volviendo a nuestra mesa, en un contexto de un restaurante donde vamos a comer.
 
 En mi opinión, la interpretación viene dada por la terna (dato, contexto, epistemología) y si algo en esa terna cambia, la interpretación cambia.
 
-------
 
-Y **¿por qué esto es tan importante para hacer software?** Para mi esto es interesante en la vida en general y en el contexto del software en particular porque, sobre todo cuando empezamos, estamos seducidos por las técnicas, que cómo veis están a nivel del dato.
 
-En este aspecto, la técnica entendida como un conjunto de pasos para lleva a cabo una acción nos da poca información sobre el contexto por lo que si solo conocemos la técnica, no sabemos cuándo aplica y cuándo no. Estamos como locos buscando esas _Balas de Plata_ de las que habla [Brooks](https://en.wikipedia.org/wiki/Fred_Brooks) y muchas veces hasta nos permitimos el lujo de evangelizar a todo nuestro entorno porque eso nos parece maravilloso.
+### **¿por qué esto es tan importante para hacer software?**
+
+Para mi esto es interesante en la vida en general y en el contexto del software en particular porque, sobre todo cuando empezamos, estamos seducidos por las técnicas, que cómo veis están a nivel del dato.
+
+En este aspecto, la técnica entendida como un conjunto de pasos para llevar a cabo una acción nos da poca información sobre el contexto por lo que si solo conocemos la técnica, no sabemos cuándo aplica y cuándo no. Estamos como locos buscando esas _Balas de Plata_ de las que habla [Brooks](https://en.wikipedia.org/wiki/Fred_Brooks) y muchas veces hasta nos permitimos el lujo de evangelizar a todo nuestro entorno porque eso nos parece maravilloso.
 
 He tenido muchísimas conversaciones con  [@pedrovgs](https://twitter.com/pedrovgs), [@jjtorroglosa](https://twitter.com/jjtorroglosa), [@serchinastico](https://twitter.com/serchinastico) y otras tantas con con [@manolovn](https://twitter.com/manolovn) y [@Tylosan](https://twitter.com/Tylosan) al respecto y mi conclusión es que, **como desarrolladores, programar y utilizar la técnica es nuestra última opción; es un detalle de implementación. Todo empieza por comprender las necesidades de nuestro cliente, cuestionarlas, masajearlas y simplificarlas tanto que la programación sea sencilla (a ser posible hasta innecesaria)**.
+
+Conocer nuestra epistemología y la de nuestro entorno nos posibilita tener en cuenta más variables y más relevantes a la hora de tomar una decisión y veremos que dependiendo del contexto y de con quien trabajemos, lo que tiene todo el sentido del mundo en un momento dado, deja detenerlo si las circunstancias cambian. Es decir, tendremos la posibilidad de tomar decisiones con intenligencia.
 
 En los próximos posts intentaré dar ejemplos sobre como conocer la epistemología y el contexto, tanto de nuestro proyecto como de nuestros compañeros puede hacer que tomemos decisiones que de otra manera habríamos obviado.
