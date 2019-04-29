@@ -2,7 +2,13 @@
 layout: commented_post
 title:  "Lo fecal del desarrollo software"
 date:   2015-01-21 13:00:00 +0200
-categories: software
+categories: blog
+excerpt:
+  No suelo escribir mucho y cuando lo hago trato de que sea algo útil para quien me lea. Algo que responda alguna duda, que ayude con algún problema… Esta vez escribo para desahogarme, para cuestionarme algunos temas que consideraba más que zanjados y para ver si escribiendo un poco pongo en orden mis ideas.
+  <br/>
+  Tampoco es que sea un perro viejo en este mundillo, mi vida laboral se remonta a unos 6 años y pico. Pero en este tiempo he tenido la suerte de pasar por al menos 7 empresas. He trabajado en un montón de proyectos, algunos los he empezado yo, otros he tenido el placer de continuarlos y otros la mala suerte de conocerlos.
+  <br/>
+  Voy a hablar de este último grupo de proyectos. Esos proyectos horrendos de esos que harían vomitar a una cabra. Me gustaría hablar de como se llega a esa situación y quien la promueve, quien la permite…
 ---
 
 No suelo escribir mucho y cuando lo hago trato de que sea algo útil para quien me lea. Algo que responda alguna duda, que ayude con algún problema… Esta vez escribo para desahogarme, para cuestionarme algunos temas que consideraba más que zanjados y para ver si escribiendo un poco pongo en orden mis ideas.

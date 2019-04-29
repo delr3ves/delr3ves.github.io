@@ -2,7 +2,15 @@
 layout: commented_post
 title:  "Los singletons no son malos, es la sociedad que los corrompe"
 date:   2015-06-04 13:00:00 +0200
-categories: software
+categories: blog
+excerpt:
+  Que levante la mano quien haya implementado en algún momento el patron singleton.
+  <br/>
+  Ahora que levante la mano quien no se haya arrepentido de esa decisión.
+  <br/>
+  Finalmente que levante la mano quien no vaya diciendo por ahí que el singleton es [evil|crap|el mal|un antipatron|…].
+  <br/>
+  Bien, si llevas un rato con la mano levantada es posible que seas parte de esa sociedad que corrompe a los pobres singletons.
 ---
 
 Que levante la mano quien haya implementado en algún momento el patron singleton.

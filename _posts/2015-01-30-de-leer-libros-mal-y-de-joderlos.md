@@ -2,7 +2,17 @@
 layout: commented_post
 title:  "De leer libros mal y de joderlos"
 date:   2015-01-30 13:00:00 +0200
-categories: software
+categories: blog
+excerpt:
+  ¿Quién por aquí se ha leído el manifiesto ágil? ¿dónde pone que documentar es malo? ¿o que no se planifica nada? ¿por qué usamos la excusa de “somos ágiles” para saltaros la gran mayoría de las buenas prácticas que se han ido recopilando durante años?
+  <br/>
+  Y no solo quiero entrar en los aspectos y perfiles técnicos. Vamos a hablar también del Lean. Con su buque insignia Lean Startup. ¿Quién ha oído
+  hablar de este libro/blog/web (no sé si llamarlo escuela directamente)?. ¿Alguno de vosotros lo ha leído? ¿Os suena el concepto de MVP?
+  <br/>
+  Llevo varias startups quebradas a mis espaldas. No demasiadas, pero si las suficientes como para acomplejarme un poquito y preguntarme, ¿tendré algo que ver yo en que la mitad de las empresas en las que he trabajado hayan quebrado?
+  <br/>
+  Bueno, pues en todas ellas he visto un montón de cosas en común y casi todas tienen bastante relación con libros mal leídos.
+
 ---
 
 Me declaro fan incondicional de la que, para mi, es la mejor película española de todos los tiempos: Amanece que no es poco.
@@ -13,13 +23,13 @@ Echadle un ojo a este fragmento (a partir del segundo 22):
 
 {% include youtubePlayer.html id="YVxpdp57onc" time=22 %}
 
-Recuerdo que en su momento este era de las escenas que menos comprendía, que más me costaba extrapolar a mi día a día. !Hasta que el agilismo se puso de moda!
+Recuerdo que en su momento esta era de las escenas que menos comprendía, que más me costaba extrapolar a mi día a día. !Hasta que el agilismo se puso de moda!
 
 Me explico:
 
 ¿quién de vosotros se ha leído el [manifiesto ágil](https://agilemanifesto.org/)? ¿dónde pone que documentar es malo? ¿o que no se planifica nada? **¿por qué usáis la excusa de “somos ágiles” para saltaros la gran mayoría de las buenas prácticas que se han ido recopilando durante años?**
 
-Y no solo quiero entrar en los aspectos y perfiles técnicos. Vamos a hablar también del **Lean**. Con su buque insignia [Lean Startup](http://theleanstartup.com/). ¿Quién ha oído hablar de este libro/blog/web (no sé si llamarlo escuela directamente)¿. ¿Alguno de vosotros lo ha leído? ¿Os suena el concepto de [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)?
+Y no solo quiero entrar en los aspectos y perfiles técnicos. Vamos a hablar también del **Lean**. Con su buque insignia [Lean Startup](http://theleanstartup.com/). ¿Quién ha oído hablar de este libro/blog/web (no sé si llamarlo escuela directamente)?. ¿Alguno de vosotros lo ha leído? ¿Os suena el concepto de [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)?
 
 Llevo varias startups quebradas a mis espaldas. No demasiadas, pero si las suficientes como para acomplejarme un poquito y preguntarme, ¿tendré algo que ver yo en que la mitad de las empresas en las que he trabajado hayan quebrado?
 

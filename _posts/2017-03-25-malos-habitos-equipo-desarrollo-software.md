@@ -2,11 +2,17 @@
 layout: commented_post
 title:  "Malos hábitos en un equipo de desarrollo software"
 date:   2017-03-25 13:53:04 +0200
-categories: software
+categories: blog
+excerpt:
+  Pues después de un montón de tiempo sin escribir (y sin saber sobre que tema hacerlo) el otro día publiqué el que hasta el momento ha sido mi tweet más popular.
+  <br/>
+  <q>Se habla mucho de la deuda técnica en el código. Sin embargo las mayores ñapas (y más costosas) yo las he visto en los hábitos.</q>
 ---
 
 Pues después de un montón de tiempo sin escribir (y sin saber sobre que tema hacerlo) el otro día publiqué el que hasta el momento ha sido mi tweet más popular.
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="es" dir="ltr">Se habla mucho de la deuda técnica en el código. Sin embargo las mayores ñapas (y más costosas) yo las he visto en los hábitos.</p>&mdash; Sergio Arroyo Cuevas (@delr3ves) <a href="https://twitter.com/delr3ves/status/821425216735903746?ref_src=twsrc%5Etfw">January 17, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Al final [@snunsan](https://twitter.com/snunsan) propuso la idea de publicar una lista sobre “cuáles son esos hábitos” tan terribles de los que hablaba. Si he de ser sincero, en el momento no estaba pensando en nada en concreto, simplemente acababa de hablar de algo con [@serchinastico](https://twitter.com/serchinastico) y me vino la inspiración. Tampoco estoy seguro de si voy a estropear el mensaje intentando aclararlo pero bueno, ya que fui yo el que abrió el melón, ahí van algunos de esos malos hábitos que me vienen a la mente:
 
