@@ -27,7 +27,7 @@ El principio de diseño [KISS](https://en.wikipedia.org/wiki/KISS_principle) nos
 
 ## YAGNI (You aren't gonna need it)
 
-El principio [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) nos dice que no deberíamos añadir más funcionalidad de la estrictamente necesaria.
+El principio [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) nos dice que no deberíamos añadir más funcionalidad de la estrictamente necesaria. Relacionado con este princpio, pero desde la perspectiva de producto, tenemos también el concepto de [MVP (Minimum Viable Product)](https://en.wikipedia.org/wiki/Minimum_viable_product).
 
 
 Bien, estos dos principios parecen de lo más razonables, ¿no? **no compliques tu programa** y **no hagas más de lo necesario**. Lo que no es tan fácil de ver es cuándo algo es más complicado de lo que debería o cual es la funcionalidad justa y necesaria.
@@ -40,14 +40,14 @@ Bien, estos dos principios parecen de lo más razonables, ¿no? **no compliques 
 * Ya ni entro a hablar de las [type classes](http://learnyouahaskell.com/types-and-typeclasses) de programación funcional que tiene asustados a un tercio de los desarrolladores que conozco. Mientras que otro tercio promete que es una forma sencilla y elegante de resolver problemas de manera robusta...
 
 
-Todos estos ejemplos los he vivido en un lado u otro de la conversación. Y es que tenemos que entender que la mayoría de **las prácticas, principios y técnicas que utilizamos en nuestro día a día nos suelen resultar sencillas porque las conocemos y las que no conocemos nos puede parecer muy complejas**. Pero esto no implica que el compañero que tenemos al lado no sepa de lo que está hablando y le resulte sencillo llevar a cabo la tarea. Así que, por favor, antes de descartar algo por el hecho de que añada complejidad accidental al problema (seguramente no uséis estas palabras, pero si algo del estilo de "_esto ahora no merece la pena_") dadle una oportunidad al que dice saber hacerlo. Eso si, si al final vais por la solución "compleja", procurad que el resto del equipo la comprenda para minimizar esa complejidad al máximo.
+Todos estos ejemplos los he vivido en un lado u otro de la conversación. Y es que tenemos que entender que la mayoría de **las prácticas, principios y técnicas que utilizamos en nuestro día a día nos suelen resultar sencillas porque las conocemos y las que no conocemos nos pueden parecer muy complejas**. Pero esto no implica que el compañero que tenemos al lado no sepa de lo que está hablando y le resulte sencillo llevar a cabo la tarea. Así que, por favor, antes de descartar algo por el hecho de que añada complejidad accidental al problema (seguramente no uséis estas palabras, pero si algo del estilo de "_esto ahora no merece la pena_" o "_es que esto complica mucho todo_") dadle una oportunidad al que dice saber hacerlo. Eso si, si al final vais por la solución "compleja", procurad que el resto del equipo la comprenda para minimizar esa complejidad al máximo.
 
 
 ## Con respecto a anticipar:
 
 El princpio YAGNI viene a decirnos **no anticipemos**. Para justificar la importancia de esto, voy a cambiar radicalmente de tema y os voy a hablar de la ansiedad (que para algo estoy rodeado de psiquiatras en casa :P).
 
-En palabras de mi padre, el _Dr. Arroyo_ que lleva 40 años tratando la ansiedad:
+En palabras de mi padre, el _Dr. Arroyo_ que lleva casi 40 años tratando la ansiedad:
 
 > La ansiedad es la necesidad de más control del que la situación nos permite.
 
@@ -64,7 +64,7 @@ Este último mecanismo es el que le da contexto y sentido al principio YAGNI. Si
 
 A mi esto me parece un problema grande y os comento mi razonamiento cuando me planteo si debo hacer una tarea ahora o más adelante por si os sirve a vosotros también:
 
-Cuando algo no lo necesito inmediatamente pienso: **¿cuánto me cuesta hacerlo ahora?** y **¿cuánto me costaría hacerlo en el futuro?**. Si el esfuerzo es parecido... ya lo haré cuando lo necesite. Sino ya empiezo a plantearme. **¿es posible que lo necesite en el futuro?** y **¿es probable?**. Si además de ser más caro hacerlo más adelante, es posible y es probable que lo tenga que hacer, creo que habría que plantearse seriamente hacerlo ahora.
+Cuando la tarea no necesita hacerse inmediatamente pienso: **¿cuánto me cuesta hacerlo ahora?** y **¿cuánto me costaría hacerlo en el futuro?**. Si el esfuerzo es parecido... ya lo haré cuando lo necesite. Sino ya empiezo a plantearme: **¿es posible que lo necesite en el futuro?** y **¿es probable?**. Si además de ser más caro hacerlo más adelante, es posible y es probable que lo tenga que hacer, creo que habría que plantearse seriamente hacerlo ahora.
 
 Si os fijáis todos los ejemplos que he puesto anteriormente son relativamente sencillos de llevar a cabo al principio, pero pueden volverse inviables según se va retrasando la tarea.
 

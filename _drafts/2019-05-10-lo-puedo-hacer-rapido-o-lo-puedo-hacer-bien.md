@@ -9,3 +9,5 @@ excerpt:
 De todas las creencias del ideario informático, una de las que más me duele cuando la escucho es la archiconocida
 
 >Lo puedo hacer rápido o lo puedo hacer bien
+
+>Este desarrollo son dos días, pero con test cuatro
