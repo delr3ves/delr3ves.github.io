@@ -4,6 +4,18 @@
 
 @import "minima";
 
+a {
+  transition: color 250ms ease-in-out;
+}
+
+h2 {
+  margin-top: 15px;
+}
+
+details {
+  margin-bottom: 15px;
+}
+
 .logo-header {
   max-height: 55px;
 }
@@ -11,10 +23,6 @@
 .read-more {
   width: 100%;
   text-align: center;
-}
-
-hr {
-    margin: 0 0 50px 0  !important;
 }
 
 .high-priority {
@@ -27,4 +35,28 @@ hr {
 .emphasis {
   color: #F06449;
   text-decoration: underline;
+}
+
+.collapsible-title {
+  transition: background-color 300ms ease-in-out;
+  width: 100%;
+  padding: 10px;
+  background: #D1E4E3;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.collapsible-title:hover {
+  background: #B7D5D4;
+  text-decoration: underline;
+}
+
+.collapsible-details {
+  padding: 15px 9px 0 9px;
+  border: 1px #DDD solid;
+  border-top: 0px;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 15px;
+  width: 100%;
+  margin-top: -2px;
 }
