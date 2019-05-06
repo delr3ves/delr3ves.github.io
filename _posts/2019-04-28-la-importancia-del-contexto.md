@@ -16,6 +16,8 @@ Mi objetivo con este post es intentar transmitir unos conceptos básicos que nos
 
 Me gustaría comenzar este post con la que yo creo que es una de las mejores definiciones de inteligencia que conozco:
 
+<span id="inteligencia"></span>
+
 > La inteligencia es la capacidad de distinguir lo fundamental de lo accesorio.
 
 Esa definición se la escuché a mi padre y me pareció una manera mucho más elegante y escueta a lo que yo solía utilizar que es algo del estilo de:
