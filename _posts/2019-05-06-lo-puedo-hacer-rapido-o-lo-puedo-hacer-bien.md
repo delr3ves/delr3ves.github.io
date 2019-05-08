@@ -16,7 +16,7 @@ con una de sus variantes estrella:
 
 a lo que muchas veces desde producto nos contestan:
 
-> ¿pero cómo tardas tanto? (si eso poner un if)
+> ¿pero cómo tardas tanto? (si eso es poner un if)
 
 y eso ya hace que nos hierva la sangre imposibilitando la conversación...
 
@@ -37,7 +37,7 @@ Con este post pretendo exponer que, desde mi punto de vista, la calidad y la vel
 ---
 _Es importante entender que la mayoría de las veces, cuando se quieren las cosas rápido, no es porque haya una urgencia real. Lo que se quiere es abaratar el proceso de desarrollo ya que el coste principal del proyecto se debe al coste de las personas implicadas en el mismo. De este modo conoceremos la motivación de la persona que transmite urgencia para así poder tener una conversación más adecuada._
 
-_Por otro lado, lo más común que haya cierta/bastante incertidumbre durante el desarrollo por lo que es muy difícil predecir el tiempo que tardaríamos con una alternativa u otra. Y sino somos capaces de saber cuál es el tiempo razonable de desarrollo, ¿cómo podríamos saber que significa rápido o lento?_
+_Por otro lado, lo más común es que haya cierta/bastante incertidumbre durante el desarrollo por lo que es muy difícil predecir el tiempo que tardaríamos con una alternativa u otra. Y sino somos capaces de saber cuál es el tiempo razonable de desarrollo, ¿cómo podríamos saber que significa rápido o lento?_
 
 ---
 
