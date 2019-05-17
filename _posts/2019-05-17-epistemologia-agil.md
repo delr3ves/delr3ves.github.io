@@ -61,7 +61,7 @@ Creo que es importante no perder de vista ninguno de estos cuatro puntos cuando 
 
 ¿Por qué no me funcionan las técnicas ágiles tan bien como me gustaría?
 El [manifiesto ágil](https://agilemanifesto.org/) deja clara la importancia de las personas.
-Y dado las diferencias tan grandes entre una persona y otra, nos convertimos en el elemento diferenciador que hace que una metodología funcione o no.
+Y dadas las diferencias tan grandes entre una persona y otra, nos convertimos en el elemento diferenciador que hace que una metodología funcione o no.
 
 Dicho esto, yo creo que la raíz de la mayoría de dificultades al intentar implantar una cultura ágil es muchas veces intentamos imponer el agilismo a personas cuya
 [espistemología](/blog/2019/04/28/la-importancia-del-contexto#epistemología) no es ágil.
@@ -81,7 +81,7 @@ Por otro lado tratar de aportar rigidez a una persona flexible, generará tambi�
 Esta incompatibilidad os la habréis encontrado muchas veces en situaciones del estilo:
 
 * Managers pidiendo estimaciones precisas sobre cuando estará listo algo que ni siquiera está bien definido.
-* Equipo de desarrollo frustrado porque la tarea cambia y se asumen que les caerá la bronca por no tenerla lista.
+* Equipo de desarrollo frustrado porque la tarea cambia y asumen que les caerá la bronca por no tenerla lista.
 * Mucho drama cuando una tarea que te dieron ayer a última hora no está lista hoy a primera.
 * ...(_please ayudadme con más ejemplos en los comentarios_)
 
@@ -92,11 +92,11 @@ Tengamos en cuenta que cambiar las prioridades de una persona no solo es una tar
 
 No obstante, si la persona que tenemos en frente requiere seguridad, siempre puede ayudar el hecho de que hagamos un esfuerzo en comunicar.
 Que vayamos avisando de las posibles alternativas que se pueden dar con nuestras soluciones. Y en general que construyamos software predecible y robusto.
-De esta manera minimizaremos la incertidumbre y reduciremos el número de sorpresas desagradables :). Es decir, que lo tenemos suficientemente controlado.
+De esta manera minimizaremos la incertidumbre y reduciremos el número de sorpresas desagradables :). Es decir, que parezca que lo tenemos suficientemente controlado.
 De hecho, tenemos muchos mecanismos para incrementar la seguridad sin perder la flexibilidad.
 
-En el caso contrario, es decir, exigir cierta rigidez a una persona flexible. En casos puntuales debería ser más sencillo ya que una persona flexible tiene mayor capacidad de adaptarse.
-No obstante, si deberíamos hacer hincapié en que dicha situación es temporal.
+En el caso contrario, es decir, exigir cierta rigidez a una persona flexible, siempre que sea en momentos puntuales debería ser más sencillo ya que una persona flexible tiene mayor capacidad de adaptarse.
+No obstante, sí deberíamos hacer hincapié en que dicha situación es temporal.
 
 En ambos casos, creo que es deseable hacer partícipes del razonamiento a las personas a las que habitualmente no suelen convencerles las decisiones tomadas.
 Nuestro punto de vista podría hacerles cambiar de idea o... mejor aún... el suyo podría hacernos cambiar la nuestra :)
