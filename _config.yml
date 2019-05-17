@@ -19,6 +19,7 @@ email: sergio@serch.dev
 description: <Freelance Software Developer>.
 lang: es
 image: /assets/images/serch-dev-logo.png
+social_card: /assets/images/social-card.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.serch.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: delr3ves

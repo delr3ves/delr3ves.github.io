@@ -9,4 +9,21 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+
+  <!-- Twitter cards -->
+<meta name="twitter:creator" content="@{{ site.twitter_username }}">
+<meta name="twitter:title"   content="{{ page.title }}">
+
+{% if page.summary %}
+<meta name="twitter:description" content="{{ page.summary }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+
+{% if page.image %}
+<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+{% else %}
+<meta name="twitter:image" content="{{ site.url }}{{ site.social_card }}">
+{% endif %}
+<!-- end of Twitter cards -->
 </head>
