@@ -3,7 +3,9 @@ layout: commented_post
 title: La epistemología ágil
 date: 2019-05-17 12:00:00 +0200
 categories: blog
-summary: La importancia de la epistmología a la hora de tener un equipo ágil.
+summary:
+  En este post me gustaría hacer una reflexión sobre dos de las, en mi opinión, principales causas de frustración al intentar aplicar las metodologías ágiles.
+  Imponer flexibilidad a personas que priorizan la seguridad y Priorizar las metodologías y técnicas frente a la epistemología.
 excerpt:
   <p>
     Se ha hablado mucho de las metodologías ágiles, de las dinámicas que pueden hacer que los equipos funcionen mejor.
