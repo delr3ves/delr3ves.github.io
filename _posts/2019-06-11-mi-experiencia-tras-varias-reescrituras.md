@@ -152,7 +152,7 @@ A pesar de que el código inicial no nos encantaba, decidimos ir aprendiendo de 
   <div class="collapsible-details">
     <p>
       Para mi esta es la historia más común y la que justifica mis miedos a las reescrituras a pesar de que he vivido más casos de éxito que de fracaso.
-      En este caso nos contrataron al de <a href="https://trycircular.com/">Circular</a> (de aquellas se llamaban Vernon Labs) para el management, al equipo de <a href="https://www.karumi.com/">Karumi</a> para mobile y a mi para backend/web y plataforma. Todos como cosultores externos, tras la salida del CTO de la empresa.
+      En este caso nos contrataron al equipo de <a href="https://trycircular.com/">Circular</a> (de aquellas se llamaban Vernon Labs) para el management, al equipo de <a href="https://www.karumi.com/">Karumi</a> para mobile y a mi para backend/web y plataforma. Todos como cosultores externos, tras la salida del CTO de la empresa.
       </p>
       <p>
       Llevaban un año y medio con la funcionalidad congelada porque estaban reescribiendo el código en un nuevo framework. Esta reescritura ya era el segundo intento fallido, pero tenían grandes esperanzas. La estrategia que siguieron fue la de desarrollar un sistema en paralelo y cuando estuviera listo lo desplegarían todo de golpe. Para lidiar con las necesidades por parte de negocio, la estrategia, que se convirtió en un mantra, fue</p>
