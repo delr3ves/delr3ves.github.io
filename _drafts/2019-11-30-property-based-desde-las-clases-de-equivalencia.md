@@ -26,12 +26,12 @@ Los test basados en propiedades utilizan un input generado "aleatoriamente" para
 
 1. **Genero datos completamente aleatorios.** Esta no es una buena estrategia ya que nuestro test tendrá que añadir lógica condicional para ejecutar un test u otro en función del tipo de datos. O para descartar la ejecución con esos valores específicos. Quienes hemos escrito algún que otro test, ya sabemos lo chungo que es meter lógica condicional en un test, así que mejor descartemos esta estrategia como norma general.
 
-2. **Genero datos con unas restricciones para el escenario que quiero probar.** Para ello, la técnica de las **clases de equivalencia** nos encajan perfectamente.
+2. **Genero datos con unas restricciones para el escenario que quiero probar.** Para ello, la técnica de las **clases de equivalencia** nos encaja perfectamente.
 
 ### Clases de Equivalencia
 
 Las técnica de [clases (o particiones) de equivalencia](https://en.wikipedia.org/wiki/Equivalence_partitioning) nos viene a poner un poco de orden a algo que habitualmente gestionamos con nuestra intuición.
->Hay un conjunto de datos que se comportan igual ante nuestro software. De modo, que si **tomásemos un dato cualquiera de dicho conjunto, podríamos asumir que el resto se va a comportar de la misma manera**.
+>Hay un conjunto de datos que se, a priori, comportan igual ante nuestro software. Es decir, nos hace ir por el mismo camino. De modo, que si **tomásemos un dato cualquiera de dicho conjunto, podríamos asumir que con el resto valores se va a comportar de la misma manera**.
 
 #### 🤔 ¿Me puedes poner un ejemplo?
 
@@ -44,16 +44,16 @@ Además, es posible que el nombre de usuario ya esté cogido por lo tanto el sis
 A partir de aquí generaríamos las clases de equivalencia:
 
 **Nombre:**
-* <span class="success-text">Cualquier cadena no vacía</span>
-* <span class="error-text">Cadena vacía</span>
+* <span class="success-text">√ Cualquier cadena no vacía</span>
+* <span class="error-text">_x_ Cadena vacía</span>
 
 **Password:**
-* <span class="success-text">Cualquier cadena entre 8 y 16 caracteres que contenga letras y números</span>
-* <span class="error-text">Cualquier cadena con menos de 8 caracteres</span>
-* <span class="error-text">Cualquier cadena con más de 16 caracteres</span>
-* <span class="error-text">Cualquier cadena 8 y 16 caracteres que no contenga letras</span>
-* <span class="error-text">Cualquier cadena 8 y 16 caracteres que no contenga números</span>
-* <span class="error-text">Cualquier cadena 8 y 16 caracteres que contenga simbolos no alfanuméricos</span>
+* <span class="success-text">√ Cualquier cadena entre 8 y 16 caracteres que contenga letras y números</span>
+* <span class="error-text">_x_ Cualquier cadena con menos de 8 caracteres</span>
+* <span class="error-text">_x_ Cualquier cadena con más de 16 caracteres</span>
+* <span class="error-text">_x_ Cualquier cadena 8 y 16 caracteres que no contenga letras</span>
+* <span class="error-text">_x_ Cualquier cadena 8 y 16 caracteres que no contenga números</span>
+* <span class="error-text">_x_ Cualquier cadena 8 y 16 caracteres que contenga simbolos no alfanuméricos</span>
 
 Sin entrar en mucho detalle sobre la técnica de clases de equivalencia, ésta nos define una regla para generar casos de prueba a partir de las particiones definidas.
 
