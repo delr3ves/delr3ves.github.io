@@ -12,6 +12,15 @@ h2 {
   margin-top: 15px;
 }
 
+h3 {
+  color: #333;
+}
+.wrapper {
+  @media (min-width: 1080px) {
+    max-width: -webkit-calc(1080px - (30px));
+  }  
+}
+
 details {
   margin-bottom: 15px;
 }
