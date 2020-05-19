@@ -14,19 +14,19 @@ Veo una y otra y otra vez cómo se ponen en distintos lados de la balanza entreg
 * Es que no está reñido hacer código de calidad y automatizar tests.
 * Es que si no automatizo tests no puedo hacer código de calidad.
 * Es que si tengo que complicar mi código para poder probarlo...
+* Es que si nos ponemos a hacer tests no llegamos.
 * Es que a mi no me dejan probar.
+* ...
 
 Entonces, ¿qué cambia en el planteamiento de que nuestros tests sean un usuario más del sistema? Yo creo que nuestra forma de replantearnos las necesidades que nuestro software debe cumplir. Los usuarios, además de utilizar nuestro sistema, también tienen necesidades sobre el mismo. De entre todas ellas, quiero hablar de una que está socialmente bastante aceptada. **La usabilidad**. Sin entrar en si por usabilidad me refiero a UX, accesibilidad, o cualquier otra acepción... quiero definir la usabilidad como la cualidad que hace que **sea cómodo usar nuestro sistema**.
 
-<div class="disclaimer">
-  <spam class="soft-emphasis">Disclaimer:</spam> Dejaré fuera de los ejemplos, las pruebas no funcionales aunque también aplica esta filosofía.
-</div>
+_Con este planteamiento espero convencer sobre todo a aquellas personas que se dedican a la parte más visible del software y que en mi experiencia suelen ser más reacias a hacer tests ya que los test de UI son más complejos, más lentos, más costosos y más de todo :S. Pero a su vez son las personas con más criterio y que más importancia le dan a la usabilidad._
 
 ## Usabilidad desde la perspectiva de los tests
 
-> Un test automático, no hace más que ejercer de usuario de la parte de nuestro sistema que queremos probar. Y como tal deberíamos preocuparnos de sus requisitos de usabilidad.
+> Un test automático, básicamente ejerce de usuario de la parte de nuestro sistema que queremos probar. Y como tal deberíamos preocuparnos de sus requisitos de usabilidad.
 
-¿Pero esto no contradice el principio que dice que nuestro código de producción no debe verse afectado por nuestros tests? Si y no. Efectivamente, el simple hecho de plantearnos hacer código testable, por definición, hará que nuestro código de producción se vea afectado. A partir de ahora, intentaré convenceros de que esos cambios son para bien :).
+¿Pero esto no contradice el principio que dice que nuestro código de producción no debe verse afectado por nuestros tests? Si y no. Efectivamente, el simple hecho de plantearnos hacer código testable, por definición, hará que nuestro código de producción se vea afectado. A partir de ahora, intentaré convenceros de que esos cambios son para bien :). Y de hecho, como veremos, la mayoría de esos cambios ya se plantean como la forma de hacer código mantenible y, en definitiva, limpio.
 
 Los tests, como usuarios de nuestro sistema **no requerirán**, a priori, **ninguna funcionalidad nueva**. En principio están interesados únicamente en probar los casos de uso que ofrece el sistema. Y, como decía, suele estar desaconsejado escribir funcionalidad específica para los tests (siempre puede haber excepciones). Sin embargo, **como usuarios de nuestro sistema podrían tener requisitos de usabilidad**.
 
@@ -36,10 +36,10 @@ Si he conseguido convencerte de este planteamiento y te hace ver los tests de ot
 
 ## Usabilidad en tests de UI
 
-Hay una escuela bastante fuerte que nos dice que los tests de UI que atacan la UI son frágiles y debemos evitarlos. En general estos tests, además suelen probar el sistema entero, por lo que añadimos, a la complejidad de probar mucho software de golpe, la fragilidad de atacar directamente a la UI. Y la lentitud de nuestros tests.
+Hay una escuela bastante fuerte que nos dice que los tests de UI son frágiles y debemos evitarlos. En general estos tests, además suelen probar el sistema entero, por lo que añadimos, a la complejidad de probar mucho software de golpe, la fragilidad de atacar directamente a la UI. Y la lentitud de nuestros tests.
 
-Para intentar rebatir, parcialmente, el argumento de la fragilidad, intentaré convenceros con esta analogía: *la interfaz de nuestro sistema es el equivalente a la signatura de nuestros métodos*. Si la cambiamos, es susceptible que rompamos cada test o cada interacción que habíamos implementado.
-Del mismo modo que con la signatura de nuestros métodos, llevamos a cabo ciertas prácticas para que sean más robustas ante cambios, como utilizar parámetros con valores por defecto, encapsular conjuntos de parámetros en objetos, etc. También podremos aplicar técnicas en el caso de la UI que hacen que nuestros tests sean más robustos.
+Para intentar rebatir, parcialmente, el argumento de la fragilidad, intentaré convenceros con esta analogía: *la interfaz de nuestro sistema es el equivalente a la signatura de nuestros métodos*. **Es nuestro contrato**. Si éste, es demasiado rígido, ante cualquier cambio, es susceptible que rompamos cada test o cada interacción que habíamos implementado.
+Y del mismo modo que con la signatura de nuestros métodos llevamos a cabo ciertas prácticas para que sean más robustas ante cambios, como utilizar parámetros con valores por defecto, encapsular conjuntos de parámetros en objetos, etc. También podremos aplicar ciertas técnicas en el caso de la UI que hacen que nuestros tests sean más robustos.
 
 Intentaré contar el escenario menos usable que me he encontrado con una interfaz gráfica y trataré de poner ejemplos de menos a más usables.
 
@@ -126,13 +126,55 @@ En este caso estamos hablando de APIs, por lo tanto, los usuarios de nuestros m�
 
 ¿Y qué quiere decir usabilidad en mis métodos?
 
+* Que el código que quiero probar no haga demasiadas cosas diferentes.
+* Que el código que quiero probar tenga muchísimos caminos posibles.
+* Que la signatura de mis métodos sea _honesta_.
 * Que tengo capacidad de decisión sobre la porción exacta de código que quiero probar.
 * Que no tengo que montar la marimorena para obtener una instancia de eso que quiero probar.
 * Que no tengo que llamar a 450 métodos antes de llamar a los métodos que en realidad quiero probar.
 * Que no tengo que crear un dataset costosísimo de crear con cada test.
-* O, del mismo modo, que no tengo que llamar a mis métodos con 57 argumentos.
 
 Intentaré desarrollar un poco más cada punto desde el punto de vista de lo que puedo hacer en mi código de producción para simplificar. _En otro post que estoy preparando hablaré de cómo mitigar esto desde el punto de vista de los tests._
+
+### Que el código que quiero probar no haga demasiadas cosas diferentes o tenga muchísimos caminos posibles
+
+El incumplimiento del principio de responsabilidad única (la S de [SOLID](https://es.wikipedia.org/wiki/SOLID)) es quizás uno de los mayores enemigos del código fácilmente testable. Y este punto hace alusión directa al mismo. Si el fragmento de código que quiero probar hace muchas cosas diferentes, es muy probable que tenga que escribir, o bien tests muy complejos, o muchos tests.
+
+Del mismo modo, cuando nos enfrentamos a un código con demasiada complejidad ciclomática, es decir, con mucha ruptura de secuencia y por lo tanto muchos flujos de ejecución posibles, nos resultará tedioso de probar.
+No es lo mismo probar un fragmento que tiene un if con 50 ramas diferentes incluso con condiciones anidadas, que un fragmento de código secuencial puro.
+
+La complejidad ciclomática determina el mínimo número de tests diferentes que tengo que realizar/implementar, para probar completamente un trozo de software, por lo tanto nos interesa reducirla lo máximo posible para reducir la cantidad de tests que debo realizar.
+
+En los dos casos comentados, nos enfrentamos a código con una carga cognitiva potencialmente grande. De ser así, es posible que nos agobie pensar qué y cómo probar. De hecho, es muy probable que directamente nos agobie intentar deducir que está haciendo exactamente ese código. Y si no somos capaces de razonar qué hace ese código, muy probablemente no seremos capaces de definir un buen conjunto de pruebas.
+
+Por el contrartio, normalmente, descomponer nuestro código en fragmentos pequeños, con alta cohesión y con un propósito único y sencillo, hará que no tengamos que pensar en demsaidas cosas para trabajar con él. Y por lo tanto probarlo será también más sencillo ya que no tendremos que tener en la cabeza estructuras demasiado complejas.
+
+### Que la signatura de mis métodos sea honesta
+
+Veamos este punto con un ejemplo práctico:
+
+```kotlin
+    fun signUp(user: User)
+```
+
+vs
+
+```kotlin
+    sealed class SignUpResult
+    data class DuplicatedUserError(user: User): SignUpResult
+    data class ValidationError(errors: List<Error>): SignUpResult
+    data class CreatedUser(createdUser: User): SignUpResult
+
+    fun signUp(user: SignUpRequest): SignUpResult
+```
+
+En el primer caso vemos que no tenemos apenas información de lo que puede suceder durante el signUp. Mientras que en el segundo caso nos hacemos una idea de la posible casuística ya que la signatura nos está dando muchas pistas.  Por lo tanto nos será mucho más fácil plantear una prueba de tipo caja negra con la segunda signatura que con la primera.
+
+_Simplemente viendo las signaturas, para el primer caso se me ocurriría hacer una sola prueba, mientras que en el segundo caso, sé que, al menos debería probar tres flujos diferentes._
+
+Además, las aserciones serán más sencillas con la segunda signtaura, ya tengo toda la información contenida en la misma. De este modo tengo acceso a toda la información que necesito como resultado de la ejecución de mi método.
+
+En el primer caso, sin embargo, tendría que ver cómo conseguir información del usuario recien creado si quisiera verificar, por ejemplo que se le ha asignado un id. O que su password no está guardada en plano (por poner ejemplos típicos de un signup).
 
 ### Que tengo capacidad de decisión sobre la porción exacta de código que quiero probar
 
@@ -155,7 +197,7 @@ En este caso, la forma más típica es recurrir a la inyección de dependencias,
 
 Como comentaba en el punto anterior, si requerimos de un montón de dependencias para inicializar nuestro SUT (subject/system under test), es probable que nos acabe por dar mucha pereza.
 
-Es importante identificar que cuando tenemos muchísimas dependencias, es muy probable que estemos violando el principio de responsabilidad única (la S de [SOLID](https://es.wikipedia.org/wiki/SOLID)), que es quizás uno de los mayores enemigos del código fácilmente testable.
+Es importante identificar cuando tenemos muchísimas dependencias,ya que es muy probable que estemos violando el principio de responsabilidad única.
 
 De ser este el caso, podríamos plantear si nuestra clase podría dividirse simplificando así también su árbol de dependencias. Un buen identificador podría ser verificar si tenemos dependencias opcionales. De ser así, es muy posible que nuestra clase se pudiera partir. En general hacer esto no es una tarea especialmente compleja y los IDEs nos ayudan bastante así que no debería suponer un gran problema.
 
@@ -191,9 +233,11 @@ En este caso, no solo es que el código de producción será menos testable en e
 
 * **Estado global del sistema**: En tests con un scope grande o que atacan a sistemas externos como podría ser nuestro storage (base de datos, APIs, etc.) podemos encontrarnos con este problema. Creo que aquí la solución mas típica/evidente vendría dada por cambiar el alcance del test, aunque, como digo, en la medida de lo posible, tener clases y métodos stateless que reciben lo que necesitan para trabajar, nos ahorra mucho tiempo.
 
+Además, cuando el código afecta al estado global del sistema de manera intensiva, es muy posible que el tear down de nuestros tests se complique ya que es deseable que el sistema quede en el mismo estado tras la ejecución de un test. De no cumplir con esta propiedad, más temprano que tarde, nuestra suite de test se vuelve inestable ya que el estado modificado por un test podría afectar a la ejecución de otros tests ejecutados posteriormente.
+
 ### Que no tengo que crear un dataset costosísimo de crear con cada test o, del mismo modo, que no tengo que llamar a mis métodos con 57 argumentos
 
-Yo creo que en este punto se encuentran la mayoría de las líneas de código de test aburridas de escribir :S.
+Yo creo que en este punto y en el anterior se encuentran la mayoría de las líneas de código de test aburridas de escribir :S.
 
 ```kotlin
   fun userIsValidForCreation(userName: String, email: Sring, password: String, repeatPassword: String, name: String, lastName: String, birthday: DateTime, ...)
@@ -217,18 +261,17 @@ vs
   fun userIsValidForCreation(request: CreateUserRequest)
 ```
 
-En la primera versión, cada vez que quieras llamar al método tendremos que pasarle un montón de parámetros que hace que tengamos que escribir mucho código de mecanógrafo.
-En la segunda versión solo un parámetro, que si bien es cierto que podría llegar a ser tedioso de completar, podríamos hacer uso de patrones creacionales como Builders o MotherObjects para reutilizarlos.
+En la primera versión, cada vez que quieras llamar al método tendremos que pasarle un montón de parámetros que hace que tengamos que escribir mucho _código de mecanógrafo_.
 
-Además esto tiene la ventaja de que nuestros tests suelen ser más robustos ya que la signatura de los métodos no cambia con tanta frecuencia. En el primer caso si por ejemplo quisiera añadir la localización de nuestro user, habría que tocar en todos los sitios donde se llame a este método, mientras que en el segundo caso el método seguiría igual.
+En la segunda versión solo un parámetro, que si bien es cierto que podría llegar a ser tedioso de inicializar, podríamos hacer uso de patrones creacionales como Builders o MotherObjects para simplificar la tarea.
 
-Este ejemplo como vemos, facilita la usabilidad no solo en el test, sino en cualquier otro lugar en el que se use el método userIsValidForCreation.
+Además esto tiene la ventaja de que nuestros tests suelen ser más robustos ya que la signatura de los métodos no cambia con tanta frecuencia. En el primer caso si, por ejemplo, quisiera añadir la localización de nuestro user, habría que tocar en todos los sitios donde se llame a este método, mientras que en el segundo caso el método seguiría igual.
 
 ## Usabilidad en cualquier test
 
 Finalmente me gustaría hablaros de otros aspectos de nuestro software de producción que hacen que sea más usable desde el punto de vista de las pruebas (ya sean manuales o automáticas).
 
-* **¿Cómo de complejo es levantar todo mi sistema para poder usarlo?** De no ser cómodo, debería invertir más esfuerzo en facilitar este proceso ya que si, como devs, nos cuesta trabajo arrancar el sistema, es uy probable que no probemos lo que hacemos ni siquiera a mano.
+* **¿Cómo de complejo es levantar todo mi sistema para poder usarlo?** De no ser cómodo, debería invertir más esfuerzo en facilitar este proceso ya que si, como devs, nos cuesta trabajo arrancar el sistema, es muy probable que no probemos lo que hacemos ni siquiera a mano.
 
 * **¿Puedo probar las cosas antes de ir a producción?** Suena obvio, pero si nuestra capacidad de testar nuestro sistema no forma parte de los requisitos, no puede suceder que no podamos probar, por ejemplo nuestro proceso de pagos hasta llegar a producción, porque no hemos tenido en cuenta que necesitamos un sandbox.
 
@@ -244,5 +287,7 @@ Creo que nadie discute que las necesidades de los usuarios son algo que marca la
 * Hacer código testable no suele ser incompatible con hacer código mantenible sino todo lo contrario.
 * Hacer código testable no implica necesariamente automatizar toda nuestra suite de tests, sino en permitirnos hacerlo si lo llegamos a necesitar.
 * En el caso de hacer librerías internas/SDKs, pensar en que sea fácil de probar y fácil de usar es básicamente lo mismo.
+
+> Creo que todas las mejoras propuestas para hacer nuestro código más usable, son coherentes con todas esas practicas que nos dicen que harán nuestro software más fácil de comprender, mantener y modificar.
 
 Y seguro que me dejo muchas cosas, pero lo voy a dejar aquí de momento. Muchas gracias a las personas que hayáis aguantado hasta el final. Siento haberme extendido tanto :S
