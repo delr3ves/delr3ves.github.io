@@ -64,12 +64,12 @@ El problema, de esta aproximación es que la signatura de nuestro método nos es
 
 ```kotlin
 sealed class TransferResult
-data class TransferSuccess(val transfer: Transfer)
-data class InvalidConcept(val concept: String)
-data class SourceAccountDoesNotBelongToUser(val user: User, val isban: String)
-data class DestinationAccountAndNameDoesNotMatch(val name: String, val isban: String)
-data class InvalidPassword()
-data class InsufficientFunds(val requestedAmount: BigDecimal, val remainingAmount: BigDecimal)
+data class TransferSuccess(val transfer: Transfer): TransferResult
+data class InvalidConcept(val concept: String): TransferResult
+data class SourceAccountDoesNotBelongToUser(val user: User, val isban: String): TransferResult
+data class DestinationAccountAndNameDoesNotMatch(val name: String, val isban: String): TransferResult
+data class InvalidPassword(): TransferResult
+data class InsufficientFunds(val requestedAmount: BigDecimal, val remainingAmount: BigDecimal): TransferResult
 
 fun makeTransfer(transferOrder: TransferOrder, requester: User): TransferResult
 ```
